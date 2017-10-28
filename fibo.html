@@ -1,0 +1,25 @@
+<script type="text/javascript">
+	let fibonacci = function(n){
+
+		let i;
+		let fib = []; // Initialize array!
+
+		fib[0] = 1;
+		fib[1] = 2;
+	    document.write(fib[0]);
+		document.writeln("<br/>");
+	    document.write(fib[1]);
+		document.writeln("<br/>");
+		for(i=2; i<n; i++)
+		{
+		    // Next fibonacci number = previous + one before previous
+		    // Translated to JavaScript:
+		    fib[i] = fib[i-2] + fib[i-1];
+		    console.log(fib[i]);
+		    document.write(fib[i]);
+		    document.writeln("<br/>");
+		}
+	}
+
+	fibonacci(10);
+</script>
